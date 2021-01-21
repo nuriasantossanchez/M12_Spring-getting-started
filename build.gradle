@@ -1,7 +1,7 @@
 buildscript {
     ext {
         springBootPlugin = 'org.springframework.boot:spring-boot-gradle-plugin'
-        springBootVersion = '2.0.2.RELEASE'
+        springBootVersion = '2.4.2'
         thinPlugin = 'org.springframework.boot.experimental:spring-boot-thin-gradle-plugin'
         thinVersion = '1.0.11.RELEASE'
     }
@@ -13,6 +13,7 @@ buildscript {
         classpath("${thinPlugin}:${thinVersion}")
     }
 }
+
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -27,6 +28,7 @@ repositories {
 }
 
 dependencies {
+    implementation('org.springframework.boot:spring-boot-starter-hateoas')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework:spring-tx')
     compile('org.springframework:spring-webmvc')
