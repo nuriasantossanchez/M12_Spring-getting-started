@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "acafdf04-1a20-44e5-b4f6-0913f030aa67",
+		"name": "GET Environment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET {{IP}}:{{port}}",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"IP\", \"localhost\");\r",
+							"pm.environment.set(\"port\", \"8080\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}:{{port}}",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{port}}"
+				}
+			},
+			"response": []
+		}
+	]
+}
