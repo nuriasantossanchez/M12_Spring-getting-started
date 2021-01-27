@@ -1,10 +1,14 @@
 package springBootInitialDemo.repository;
 
-import springBootInitialDemo.dto.GreetingResponse;
+import springBootInitialDemo.dto.GreetingResponseDto;
 
+/**
+ * Interface de la capa Repository
+ *
+ */
 public interface IGreetingRepository {
 
-    public GreetingResponse getGreeting(String greeting);
+    public GreetingResponseDto getGreeting(String greeting);
 
-    public GreetingResponse getGreeting();
+    public GreetingResponseDto getGreeting();
 }

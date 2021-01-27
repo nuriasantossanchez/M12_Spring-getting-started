@@ -1,9 +1,13 @@
 package springBootInitialDemo.service;
 
-import springBootInitialDemo.dto.GreetingResponse;
+import springBootInitialDemo.dto.GreetingResponseDto;
 
+/**
+ * Interface de la capa Service
+ *
+ */
 public interface IGreetingService {
 
-    GreetingResponse getGreeting(String greeting);
-    GreetingResponse getGreeting();
+    GreetingResponseDto getGreeting(String greeting);
+    GreetingResponseDto getGreeting();
 }

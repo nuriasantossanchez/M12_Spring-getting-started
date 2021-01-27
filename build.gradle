@@ -28,15 +28,17 @@ repositories {
 }
 
 dependencies {
-    implementation('org.springframework.boot:spring-boot-starter-hateoas')
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-hateoas')
     compile('org.springframework:spring-tx')
     compile('org.springframework:spring-webmvc')
     compile('org.springframework.data:spring-data-jpa')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
+
 springBoot {
     mainClassName = 'springBootInitialDemo.App'
 }
+
 
